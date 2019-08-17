@@ -9,8 +9,8 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote('Bow Down!', 'Beyonce'),
-    new Quote('Hey Mrs. Carter', 'Beyonce')
+    new Quote('Bow Down!', 'by: Beyonce'),
+    new Quote('Hey Mrs. Carter', 'by: Beyonce')
   ];
 
   toggleDetails(index){
