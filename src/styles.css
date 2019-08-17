@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.boxed {
+    border: 5px solid blue ;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    background-color: paleturquoise;
+    margin: 100px;
+}
