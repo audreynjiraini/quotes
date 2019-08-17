@@ -1,7 +1,7 @@
-<div>
-    <h1>My Quotes</h1>
-    <hr>
-    <h3 *ngFor='let quote of quotes'>
-        {{quote.name}}: by {{quote.author}}
-    </h3>
+<h1>My Quotes</h1>
+<hr>
+<div *ngFor='let quote of quotes; let i = index'>
+    <p>{{quote.name}}</p>
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (next)='nextQuote($event,i)'></app-quote-detail>
 </div>

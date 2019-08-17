@@ -8,14 +8,20 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
 
-  quotes:Quote[] = [
-    {name:'Watch finding Nemo', author:'Beyonce'},
-    {name:'Watch finding Nemo',author:'Beyonce'},
-    {name:'Watch finding Nemo',author:'Beyonce'},
-    {name:'Watch finding Nemo',author:'Beyonce'},
-    {name:'Watch finding Nemo',author:'Beyonce'},
-    {name:'Watch finding Nemo',author:'Beyonce'},
+  quotes: Quote[] = [
+    new Quote('Bow Down!', 'Beyonce'),
+    new Quote('Hey Mrs. Carter', 'Beyonce')
   ];
+
+  toggleDetails(index){
+    this.quotes[index].showAuthor = !this.quotes[index].showAuthor;
+  }
+
+  nextQuote(next, index) {
+    if (next) {
+      this.quotes.splice(index,1);
+    }
+  }
 
   constructor() { }
 
