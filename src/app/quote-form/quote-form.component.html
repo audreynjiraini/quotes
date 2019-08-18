@@ -1,13 +1,13 @@
 <div class="container-fluid">
     <h2 class="text-center">Have a quote you would like to share with the rest of us?</h2>
     <hr>
-    <form #quoteForm='ngForm'>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
         <div class="form-group">
             <h4>Input your quote here:</h4>
-            <label for="statement"></label>
-            <textarea class="form-control" id="statement" rows="4" [(ngModel)]="newQuote.statement" name="statement"
-                #statement="ngModel" required></textarea>
-            <div [hidden]="statement.valid || statement.pristine" class="alert alert-danger">
+            <label for="name"></label>
+            <textarea class="form-control" id="name" rows="4" [(ngModel)]="newQuote.name" name="name"
+                #name="ngModel" required></textarea>
+            <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
                 <p>The actual quote is required</p>
             </div>
         </div>
