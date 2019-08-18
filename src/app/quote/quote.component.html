@@ -5,7 +5,7 @@
         <div *ngFor='let quote of quotes; let i = index'>
             <p>{{quote.name}}</p>
             <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (next)='nextQuote($event,i)'></app-quote-detail>
+            <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' ></app-quote-detail>
         </div>
     </div>
     <div class="form">
