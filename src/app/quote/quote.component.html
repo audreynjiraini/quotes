@@ -1,35 +1,16 @@
 <div class="container">
     <h1>My Quotes</h1>
     <hr>
-    <div class="boxed">
+    <div class="row boxed">
         <div *ngFor='let quote of quotes; let i = index'>
             <p>{{quote.name}}</p>
             <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' ></app-quote-detail>
+            <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote'></app-quote-detail>
         </div>
     </div>
-    <div class="form">
-        <h2>Would you like to submit a quote, you can do that below here:</h2>
-        <br><br>
-        <form action="">
-            <div class="quote-statement">
-                <h4>Input your quote here:</h4>
-                <textarea name="quote" id="statement" cols="100" rows="5"></textarea>
-            </div>
 
-            <br><br>
-
-            <div class="quote-author">
-                <h4>Who is the author of this masterpiece?</h4>
-                <input type="text" placeholder="Author's name:">
-            </div>
-
-            <br><br>
-
-            <div class="submit-quote btn-success">
-                <button type="submit">Submit</button>
-            </div>
-
-        </form>
+    <div class="row">
+        <app-quote-form></app-quote-form>
     </div>
+
 </div>
