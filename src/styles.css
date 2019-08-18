@@ -8,3 +8,15 @@
     background-color: rgb(255, 255, 255);
     margin: 10px 0px 20px 0px;
 }
+.padding {
+    padding: 10px;
+}
+.padding-quote {
+    padding-top: 20px;
+}
+.fa-thumbs-up {
+    color: green !important;
+}
+.fa-thumbs-down {
+    color: red !important;
+}
