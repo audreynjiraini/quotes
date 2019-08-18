@@ -1,2 +1,13 @@
-<p>Author: {{ quote.author }}</p>
-<p>Submitted: {{quote.submitDate|dateAgo}} by {{quote.submitter}}.</p>
+<div>
+    <p>Author: {{ quote.author }}</p>
+    <p>Submitted: {{quote.submitDate|dateAgo}} by {{quote.submitter}}.</p>
+</div>
+
+<div>
+    <p>Likes:{{numberOfLikes}} </p>
+    <p>Dislikes:{{numberOfDislikes}}</p>
+    <button>Like</button>
+    <button>Dislike</button>
+</div>
+
+<button (click)= 'quoteDelete(true)'>Delete Quote</button>

@@ -9,8 +9,8 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote('Bow Down!', 'Beyonce', new Date(2019,7,16), 'Audrey'),
-    new Quote('Hey Mrs. Carter', 'Beyonce', new Date(2019,7,17), 'Audrey')
+    new Quote(1, 'Bow Down!', 'Beyonce', new Date(2019,7,16), 'Audrey',0,0),
+    new Quote(2, 'Hey Mrs. Carter', 'Beyonce', new Date(2019,7,17), 'Audrey',0,0)
   ];
 
   toggleDetails(index){
@@ -20,7 +20,19 @@ export class QuoteComponent implements OnInit {
   addNewQuote(quote) {
     let quoteLength = this.quotes.length;
     quote.submitDate = new Date()
+    quote.numberOfLikes = 0;
+    quote.numberOfDislikes = 0;
     this.quotes.push(quote)
+  }
+
+  deleteNewQuote(isComplete, index){
+    if (isComplete) {
+      let toDelete = confirm(`Are you sure you want to delete ${this.quotes[index].name}?`)
+
+      if (toDelete){
+        this.quotes.splice(index,1)
+      }
+    }
   }
 
   constructor() { }

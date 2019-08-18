@@ -3,9 +3,9 @@
     <hr>
     <div class="row boxed">
         <div *ngFor='let quote of quotes; let i = index'>
-            <p>{{quote.name}}</p>
+            <h3>{{quote.name}}</h3>
             <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote'></app-quote-detail>
+            <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='deleteNewQuote($event,i)'></app-quote-detail>
         </div>
     </div>
 
