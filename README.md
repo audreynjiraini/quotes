@@ -1,4 +1,18 @@
 # Quotes
+This is the Quotes webpage that displays quotes and allows users to input their own quotes and vote on them.
+
+#### 17 August 2019
+By Audrey Njiraini
+
+## Setup/Installation Requirements
+* You can view the page at https://audreynjiraini.github.io/quotes/
+
+## Contact Information
+If you need clarification on any aspect, feel free to reach me on my email at audreynjiraini@gmail.com
+
+### License
+MIT License
+Copyright (c) 2019 Audrey Njiraini
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.0.
 
