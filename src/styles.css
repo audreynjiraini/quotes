@@ -1,12 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/font-awesome/css/font-awesome.css";
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC&display=swap');
 .boxed {
-    border: 5px solid blue ;
+    border: 5px solid black ;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
-    background-color: rgb(255, 255, 255);
+    background-image: url('https://raw.githubusercontent.com/audreynjiraini/quotes/master/src/assets/beyonce3.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
+
     margin: 10px 0px 20px 0px;
+}
+.overlay {
+    backface-visibility: visible;
+    color:blue;
+    font-weight: bold;
+    font-family: 'Playfair Display SC', serif;
 }
 .padding {
     padding: 10px;
@@ -16,7 +27,9 @@
 }
 .fa-thumbs-up {
     color: green !important;
+    font-size: 35px;
 }
 .fa-thumbs-down {
     color: red !important;
+    font-size: 35px;
 }

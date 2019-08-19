@@ -3,10 +3,11 @@
     <hr>
     <div class="col-md-12 boxed">
         <div *ngFor='let quote of quotes; let i = index'>
-            <h3 class="padding-quote">{{quote.name}}</h3>
-            <button (click)='toggleDetails(i)'>Toggle Details</button>
-            <app-quote-detail *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
+            <h3 class="padding-quote overlay">{{quote.name}}</h3>
+            <button class="overlay" (click)='toggleDetails(i)'>Toggle Details</button>
+            <app-quote-detail class="overlay" *ngIf='quote.showAuthor' [quote]='quote' (isComplete)='deleteQuote($event,i)'>
             </app-quote-detail>
+
         </div>
     </div>
 </div>
