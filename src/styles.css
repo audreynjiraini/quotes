@@ -7,15 +7,14 @@
     text-align: center;
     padding-top: 10px;
     padding-bottom: 20px;
-    background-image: url('https://raw.githubusercontent.com/audreynjiraini/quotes/master/src/assets/beyonce3.jpg');
-    background-repeat: repeat-x;
-    background-size: contain;
-
     margin: 10px 0px 20px 0px;
+    font-weight: bolder;
+    font-family: 'Playfair Display SC', serif;
+    background-color: black;
+    color: white;
 }
-.overlay {
-    backface-visibility: visible;
-    color:blue;
+.container {
+    color:black;
     font-weight: bold;
     font-family: 'Playfair Display SC', serif;
 }
@@ -32,4 +31,7 @@
 .fa-thumbs-down {
     color: red !important;
     font-size: 35px;
+}
+.margin {
+    margin-left: 20px;
 }
