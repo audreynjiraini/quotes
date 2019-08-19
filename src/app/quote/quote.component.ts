@@ -9,8 +9,12 @@ import { Quote } from '../quote';
 export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
-    new Quote(1, 'Bow Down!', 'Beyonce', new Date(2019,7,16), 'Audrey'),
-    new Quote(2, 'Hey Mrs. Carter', 'Beyonce', new Date(2019,7,17), 'Audrey')
+    new Quote(1, "Bow Down!", "Beyonce Giselle Knowles-Carter", new Date(2018,7,16), 'Audrey'),
+    new Quote(2, "Do what you were born to do. You just have to trust yourself.", "Beyonce Giselle Knowles-Carter", new Date(2018,7,17), 'Audrey'),
+    new Quote(3, "I don't like to gamble, but if there's one thing I'm willing to bet on, it's myself.", "Beyonce Giselle Knowles-Carter", new Date(2019,1,1), 'Audrey'),
+    new Quote(4, "Don't try to lessen yourself for the world; let the world catch up to you.", "Beyonce Giselle Knowles-Carter", new Date(2019,2,22), 'Audrey'),
+    new Quote(5, "Power is not given to you. You have to take it.", "Beyonce Giselle Knowles-Carter", new Date(2019,4,13), 'Audrey'),
+    new Quote(6, "Never let success go to your head, never let failure get to your heart.", "Beyonce Giselle Knowles-Carter", new Date(2019,7,17), 'Audrey'),
   ];
 
   toggleDetails(index){
